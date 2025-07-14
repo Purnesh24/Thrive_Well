@@ -1,0 +1,68 @@
+.sleep-analysis {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sleep-analysis-container {
+    background-image: 
+        url('https://i.ibb.co/qLSqkKWM/piclumen-1751298037548.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sleep-analysis h1 {
+    text-align: center;
+    color: #333;
+}
+
+.sleep-analysis form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sleep-analysis label {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.sleep-analysis input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.sleep-analysis button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sleep-analysis button:hover {
+    background-color: #0056b3;
+}
+
+.sleep-results {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.chart-container {
+    margin-top: 20px;
+    height: 300px;
+}

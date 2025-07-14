@@ -1,0 +1,99 @@
+/* Background and Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.homepage {
+  background: url('https://i.ibb.co/JF7kBkzf/piclumen-1751293614263.png') center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header Styles */
+.header {
+  position: fixed; /* Fixes the header to the top of the page */
+  top: 0; /* Aligns the header to the top */
+  width: 100%; /* Ensures the header spans the full width */
+  background-color: #2e2d2d; /* Background color for the header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle effect */
+  z-index: 1000; /* Ensures the header stays above other content */
+  padding: 1rem 2rem; /* Adds padding for spacing */
+  display: flex; /* Align items in a row */
+  justify-content: space-between; /* Space out logo and navbar */
+  align-items: center; /* Center items vertically */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00bfff;
+}
+
+/* Button Styles */
+.btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.call-btn {
+  background: #007bff;
+  color: white;
+}
+
+.call-btn:hover {
+  background: #0056b3;
+}
+
+.main-btn {
+  background: #00bfff;
+  color: white;
+}
+
+.main-btn:hover {
+  background: #0088cc;
+}
+
+/* Main Content */
+.main-content {
+  text-align: center;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}

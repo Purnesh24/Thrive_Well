@@ -1,0 +1,101 @@
+.journal-app {
+  position: relative; /* Needed for positioning the overlay */
+  max-width: 80%;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url('https://i.ibb.co/217gXkbT/piclumen-1751296204657.png');
+  background-size: cover; /* Ensures the background covers the entire area */
+  background-position: center;
+  overflow: hidden; /* Ensures the overlay stays within the container */
+}
+
+.journal-app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Black overlay with 50% opacity */
+  z-index: 1; /* Ensures the overlay is behind the content */
+}
+
+.journal-app > * {
+  position: relative;
+  z-index: 2; /* Brings content above the overlay */
+}
+
+
+.journal-title {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 48px;
+}
+
+.journal-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.journal-input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 150px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+.journal-button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: flex-end;
+  transition: background-color 0.3s;
+}
+
+.journal-button:hover {
+  background-color: #2980b9;
+}
+
+.journal-entries-container {
+  margin-top: 30px;
+}
+
+.journal-entry-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.journal-entry-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.journal-entry-text {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.journal-entry-time {
+  font-size: 12px;
+  color: #7f8c8d;
+}
